@@ -1,7 +1,5 @@
 # Tachkila-Composition-d-quipe
 
-# Tachkila – Football Team Composition
-
 ## Overview
 
 Tachkila is a web application designed to make football team composition easier, faster, and more organized. The project provides a simple interface that helps users visualize and organize a football team's lineup.
