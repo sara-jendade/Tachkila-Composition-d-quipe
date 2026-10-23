@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <title>Tachkila Test</title>
 </head>
+
 <body class="bg-[#0f172a] text-[#f8fafc] min-h-screen flex flex-col font-sans">
 
     <header class="flex justify-between items-center bg-[#1e293b] px-8 py-4 border-b border-[#334155]">
+
         <div class="flex items-center gap-3">
-            <img src="../Tachkila-Composition-d-quipe/logo/black_logo.png" alt=" TACHKILA Logo" class="w-9 h-10 object-contain" />
-            <h1 class="text-xl font-bold ">TACHKILA</h1>
+            <img src="../Tachkila-Composition-d-quipe/logo/black_logo.png"
+                alt="TACHKILA Logo" class="w-9 h-10 object-contain">
+            <h1 class="text-xl font-bold">TACHKILA</h1>
         </div>
-        
+
         <ul class="flex gap-6 text-sm font-medium text-[#94a3b8]">
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-yellow-500"></span> GB</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> DEF</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500"></span> MIL</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-500"></span> ATT</li>
+            <li class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-yellow-500"></span> GB
+            </li>
+            <li class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-blue-500"></span> DEF
+            </li>
+            <li class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500"></span> MIL
+            </li>
+            <li class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-500"></span> ATT
+            </li>
         </ul>
 
         <div class="flex items-center gap-2 text-sm">
             <span class="text-[#94a3b8]">Schéma</span>
-            <div class="bg-[#0f172a] px-3 py-1.5 rounded-md font-semibold border border-[#334155]">4-4-2</div>
+            <div class="bg-[#0f172a] px-3 py-1.5 rounded-md font-semibold border border-[#334155]">
+                4-4-2
+            </div>
         </div>
+
     </header>
 
     <div class="flex flex-1 overflow-hidden">
-        <aside
-            class="w-full md:w-[250px] md:min-w-[250px]
-            bg-[#1e293b] p-4
-            flex flex-col gap-4
-            border-b md:border-b-0 md:border-r border-[#334155]">
 
-            <button
-                type="button"
-                class="w-full bg-[#16a34a] hover:bg-[#15803d]
-                text-white py-2 rounded-lg
-                font-semibold text-xs transition-colors">
+        <aside class="w-full md:w-[250px] md:min-w-[250px] bg-[#1e293b] p-4 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-[#334155]">
+
+            <button type="button" id="ouvrir"
+                class="w-full bg-[#16a34a] hover:bg-[#15803d] text-white py-2 rounded-lg font-semibold text-xs transition-colors">
                 + Ajouter un joueur
             </button>
 
@@ -49,51 +58,88 @@
                     1 joueur(s)
                 </span>
             </div>
-            
+
             <p class="text-[9px] text-[#94a3b8] leading-relaxed">
                 Cliquez sur un joueur placé pour voir sa case sur le terrain.
             </p>
-            
-            
-            <!----------- la list fi hiha xmn role i9der ixd kola jouer ----------->
-            
-            
+
             <div class="bg-[#0f172a] border border-[#475569] rounded-lg overflow-hidden">
+
                 <div class="flex justify-between items-center p-2">
                     <div>
                         <strong class="text-[14px] text-[#cbd5e1]">bono</strong>
                         <p class="text-[10px] text-amber-500">Gardien</p>
                     </div>
-                    
+
                     <div class="flex gap-2">
-                        <button type="button" class="text-xs">✏️</button>
-                        <button type="button" class="text-xs">🗑</button>
+                        <button type="button" class="text-xs">Modifier</button>
+                        <button type="button" class="text-xs">Supprimer</button>
                     </div>
                 </div>
-                
+
                 <div class="p-2">
-                    
                     <select class="w-full bg-[#1e293b] text-[#cbd5e1] text-[10px] p-2 rounded border border-[#475569]">
-                        <option>GB - Gardien</option>
-                        <option>DG - Défenseur gauche</option>
-                        <option>DC - Défenseur central 1</option>
-                        <option>DC - Défenseur central 2</option>
-                        <option>DD - Défenseur droit</option>
-                        <option>MG - Milieu gauche</option>
-                        <option>MC - Milieu central 1</option>
-                        <option>MC - Milieu central 2</option>
-                        <option>MD - Milieu droit</option>
-                        <option>BU - Buteur 1</option>
-                        <option>BU - Buteur 2</option>
+                        <option value="">Sur le banc</option>
+                        <option value="GB">GB - Gardien</option>
+                        <option value="DG">DG - Défenseur gauche</option>
+                        <option value="DC1">DC - Défenseur central 1</option>
+                        <option value="DC2">DC - Défenseur central 2</option>
+                        <option value="DD">DD - Défenseur droit</option>
+                        <option value="MG">MG - Milieu gauche</option>
+                        <option value="MC1">MC - Milieu central 1</option>
+                        <option value="MC2">MC - Milieu central 2</option>
+                        <option value="MD">MD - Milieu droit</option>
+                        <option value="BU1">BU - Buteur 1</option>
+                        <option value="BU2">BU - Buteur 2</option>
                     </select>
                 </div>
-            
+
             </div>
 
         </aside>
 
+    </div>
+
+    <div id="modal" hidden>
+
+        <h2>Ajouter un joueur</h2>
+
+        <button type="button" id="fermer">X</button>
+
+        <form id="form-joueur">
+
+            <div>
+                <label for="nom"> Nom complet : </label>
+                <input type="text" id="nom" name="nom" required>
+                <p></p>
+            </div>
+
+            <div>
+                <label for="poste">Poste :</label>
+                <select id="poste" name="poste" required>
+                    <option value="">Choisir un poste</option>
+                    <option value="GB">Gardien</option>
+                    <option value="DEF">Défenseur</option>
+                    <option value="MIL">Milieu</option>
+                    <option value="ATT">Attaquant</option>
+                </select>
+                <p></p>
+            </div>
+
+            <div>
+                <label for="numero">Numéro :</label>
+                <input type="number" id="numero" name="numero" min="1" max="99" required>
+                <p></p>
+            </div>
+
+            <button type="submit">Ajouter</button>
+            <button type="button" id="annuler">Annuler</button>
+
+        </form>
 
     </div>
+
+    <script src="index.js" defer></script>
 
 </body>
 </html>
