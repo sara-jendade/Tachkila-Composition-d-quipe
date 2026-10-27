@@ -56,6 +56,18 @@ Tachkila aims to simplify football team organization through a clean interface a
 
 Potential improvements include player statistics, saving team formations, multiple tactical formations, and enhanced mobile responsiveness.
 
-## Author
+## Livrable 
 
-Developed as a web development project focused on football team composition.
+#Jira : 
+https://sarajendade.atlassian.net/jira/software/projects/TASKS/boards/67?filter=&groupBy=none&atlOrigin=eyJpIjoiYjI2OTUxNTAzNTgxNDJmZmJmOGQwNWI3ZDY0ZjZlOWIiLCJwIjoiaiJ9 
+
+#Canva : 
+
+https://canva.link/xrxci6lxhplzha3 
+
+#Vercel : 
+
+https://tachkila-composition-d-quipe.vercel.app/ 
+
+
+
