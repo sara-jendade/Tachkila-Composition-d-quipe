@@ -58,15 +58,15 @@ Potential improvements include player statistics, saving team formations, multip
 
 ## Livrable 
 
-##jira : 
+## jira : 
 
 https://sarajendade.atlassian.net/jira/software/projects/TASKS/boards/67?filter=&groupBy=none&atlOrigin=eyJpIjoiYjI2OTUxNTAzNTgxNDJmZmJmOGQwNWI3ZDY0ZjZlOWIiLCJwIjoiaiJ9 
 
-##Canva :
+## Canva :
 
 https://canva.link/hnu01j3e6o1mkcu 
 
-##Vercel :
+## Vercel :
 
 https://tachkila-composition-d-quipe.vercel.app/ 
 
